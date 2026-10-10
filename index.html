@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh Sharma | Portfolio home page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <div class="window">
+    <div class="titlebar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="titlebar-path">harsh@portfolio: ~/home</span>
+    </div>
+
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h2>Harsh Sharma </h2>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <div class="content">
+        <div class="intro">
+          
+          <h1> Hi, Welcome to My Portfolio<span class="cursor"></span></h1>
+          <p>This is a brief introduction about myself.</p>
+        </div>
+
+        <p>Hello! My name is Harsh Sharma.</p>
+
+        <h2>My Education</h2>
+        <p>I am a Computer Science student.</p>
+
+        <h2>My Hobbies</h2>
+        <ul class="hobbies">
+          <li>Coding</li>
+          <li>Cricket</li>
+          <li>Reading</li>
+        </ul>
+
+        <p class="fav-subject">My favorite subject is <b>Computer Science</b></p>
+
+        <hr>
+
+        <div class="cta">
+          <p><span>→</span> Click on About to know more about me.</p>
+          <p><span>→</span> Click on Contact to get in touch with me.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
